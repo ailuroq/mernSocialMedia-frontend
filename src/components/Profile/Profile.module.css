@@ -1,0 +1,54 @@
+.profile {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.avatar {
+    max-width: 250px;
+    height: auto;
+}
+
+.avatar_settings {
+    position: relative;
+}
+
+.edit_profile_button {
+    width: 250px;
+    height: 39px;
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    background: #7b7b85;
+    border: none;
+    border-radius: 2%;
+}
+
+.edit_profile_button:hover {
+    background: #6d6b6b;
+}
+
+.edit_profile_button:active {
+    background: #6d6b6b;
+    border: 1px solid #f7f7f7;
+}
+
+.edit_profile_button a {
+    font-size: 20px;
+    color: #fff;
+}
+
+.edit_profile_button a:hover {
+    text-decoration: none;
+}
+
+.edit_profile_button a:active {
+    text-decoration: none;
+}
+
+.profile_info {
+    text-align: left;
+    position: relative;
+}
+.profile_top {
+}
