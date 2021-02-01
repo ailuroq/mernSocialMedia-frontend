@@ -10,12 +10,10 @@ const _getProfile = (profileData) => ({
 })
 
 const getProfile = (username) => {
-    debugger
     return (dispatch) => {
         return axios
             .get(API_URL + username, {headers: authHeader()})
             .then(result => {
-                console.log(result.data)
                 dispatch(_getProfile(result.data))
             })
             .catch(error => {

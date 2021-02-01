@@ -1,6 +1,8 @@
 import {GET_PROFILE} from "../actions/types";
 
-const initialState = {}
+const initialState = {
+    profileData: ""
+}
 export default function profile(state = initialState, action) {
     switch (action.type) {
         case GET_PROFILE:
