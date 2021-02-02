@@ -1,11 +1,10 @@
 import React, {useEffect} from "react";
 import {Link, Redirect} from 'react-router-dom';
 import {useDispatch, useSelector} from "react-redux";
-import {Button, Col, Container, Row} from "react-bootstrap";
 import styles from "./Profile.module.css"
-import avatar from "./../../static/avatar.jpeg"
+import avatar from "../../../static/avatar.jpeg"
 import {useParams} from "react-router-dom";
-import getProfile from "../../actions/profile";
+import getProfile from "../../../actions/profile";
 
 const Profile = () => {
     const dispatch = useDispatch()
@@ -18,16 +17,17 @@ const Profile = () => {
 
     const {profileData} = useSelector(state => state.profile)
     return (
-        <div>
-            <Row className={styles.profile}>
-                <Col md="6">
-                    <div className={styles.profile_info}>
-                        <div className={styles.profile_top}>
-                            <p>Username: {profileData.username}</p>
-                        </div>
-                    </div>
-                </Col>
-            </Row>
+        <div className={styles.profile}>
+            <div className={styles.avatar_column}>
+                <img src={avatar} className={styles.avatar}/>
+                <button className={styles.edit_profile_button}>
+                    <Link>Edit profile</Link>
+                </button>
+
+            </div>
+            <div>
+                <p>das</p>
+            </div>
         </div>
     );
 };

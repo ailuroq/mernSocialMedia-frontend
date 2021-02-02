@@ -1,9 +1,25 @@
+.main_wrapper {
+    display: grid;
+
+    grid-template-areas:
+            "header header header"
+            "content content content";
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 4.2fr 10fr;
+    grid-gap: 10px;
+}
+
+.content {
+    max-width: 950px;
+    margin: 0 auto;
+    display: grid;
+    grid-area: content;
+    grid-template-areas: "nav content content";
+    grid-template-columns: 2fr 10fr;
+}
 label {
     display: block;
     margin-top: 10px;
-}
-.container {
-    width: 950px;
 }
 
 .card-container.card {

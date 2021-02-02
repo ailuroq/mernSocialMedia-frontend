@@ -1,39 +1,39 @@
 .profile {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 3fr 9fr;
 }
 
+.avatar_column {
+    background: #fff;
+    padding: 15px;
+    border-radius: 7px;
+}
 .avatar {
-    max-width: 250px;
-    height: auto;
-}
-
-.avatar_settings {
-    position: relative;
+    max-width: 200px;
 }
 
 .edit_profile_button {
-    width: 250px;
+    width: 200px;
     height: 39px;
     margin: 0 auto;
     display: block;
     clear: both;
-    background: #7b7b85;
+    background: #c9cdd2;
     border: none;
     border-radius: 2%;
 }
 
 .edit_profile_button:hover {
-    background: #6d6b6b;
+    background: #bfc2c6;
 }
 
 .edit_profile_button:active {
-    background: #6d6b6b;
-    border: 1px solid #f7f7f7;
+    background: #bfc2c6;
 }
 
 .edit_profile_button a {
+    display: block;
+    text-decoration: none;
     font-size: 20px;
     color: #fff;
 }
@@ -43,6 +43,7 @@
 }
 
 .edit_profile_button a:active {
+    padding-top: 2.5px;
     text-decoration: none;
 }
 
@@ -51,4 +52,6 @@
     position: relative;
 }
 .profile_top {
+    position: absolute;
+    top: 0;
 }

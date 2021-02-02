@@ -1,0 +1,4 @@
+.container {
+    grid-area: content;
+    background: #51eaba;
+}
