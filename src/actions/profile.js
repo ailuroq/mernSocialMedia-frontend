@@ -1,4 +1,4 @@
-import {GET_PROFILE} from "./types";
+import {GET_PROFILE, SET_MESSAGE} from "./types";
 import axios from "axios";
 import authHeader from "../services/auth-header";
 
@@ -9,6 +9,7 @@ const _getProfile = (profileData) => ({
     payload: profileData
 })
 
+
 const getProfile = (username) => {
     return (dispatch) => {
         return axios
@@ -17,7 +18,7 @@ const getProfile = (username) => {
                 dispatch(_getProfile(result.data))
             })
             .catch(error => {
-                alert("something gone wrong")
+                window.location = "/"
             })
     }
 }

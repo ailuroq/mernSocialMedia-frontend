@@ -1,15 +1,38 @@
 .profile {
     display: grid;
+    grid-gap: 1em;
+    align-items: start;
     grid-template-columns: 3fr 9fr;
 }
 
 .avatar_column {
     background: #fff;
     padding: 15px;
-    border-radius: 7px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, .05);
 }
+
 .avatar {
     max-width: 200px;
+}
+.modal {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    background: #ac7272;
+    width: 250px;
+    height: 150px;
+}
+
+.load_avatar {
+    background: #a5a2a2;
+    border:none;
+    color: #ffffff;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 14px;
+    width: 200px;
+    height: 30px;
 }
 
 .edit_profile_button {
@@ -20,7 +43,7 @@
     clear: both;
     background: #c9cdd2;
     border: none;
-    border-radius: 2%;
+    border-radius: 3px;
 }
 
 .edit_profile_button:hover {
@@ -48,10 +71,93 @@
 }
 
 .profile_info {
-    text-align: left;
-    position: relative;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, .05);
+    background: #fff;
+    border-radius: 5px;
+
 }
-.profile_top {
-    position: absolute;
-    top: 0;
+
+.profile_wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.short_info {
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 12fr 2fr;
+    border-bottom: 0.5px solid #c3c5cd;
+}
+
+.short_info span {
+    font-size: 21px;
+}
+
+.online {
+    justify-self: end;
+}
+
+.main_info {
+    border-bottom: 0.5px solid #c3c5cd;
+}
+
+.number_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 5px 0;
+}
+
+.info_item {
+    text-align: center;
+}
+
+.info_item p {
+    margin: 0 0;
+    padding: 0 0;
+    font-size: 15px;
+}
+
+.info_item a {
+    color: #777777;
+    text-decoration: none;
+}
+
+.info_item a:hover {
+    color: #2a5885;
+}
+
+.info_item span {
+    font-size: 23px;
+    color: #2a5885;
+}
+
+.friends {
+    border-radius: 5px;
+    background: #fff;
+}
+
+.friends_top p{
+    font-size: 15px;
+    margin: 0 0;
+    padding: 5px 15px;
+}
+.friends_top span {
+    color: #929292;
+}
+
+.posts {
+    margin-top: -160px;
+    border-radius: 5px;
+}
+
+.no_posts {
+    background: #fff;
+    text-align: center;
+    font-size: 21px;
+    padding: 20px;
+}
+
+.example {
+    grid-column: 2;
 }

@@ -19,6 +19,7 @@ const Photos = () => {
                                     type="file"
                                     className=""
                                     name="file"
+                                    enctype="multipart/form-data"
                                 />
                             </div>
                         </div>

@@ -17,39 +17,39 @@ const Header = () => {
                     <Link>LOGOTYPE</Link>
                 </div>
                 <div className={styles.search}>2</div>
-                <div className="">3</div>
+                <div className={styles.top_profile_info}>
+                    <ul className={styles.menu}>
+                        {currentUser ? (
+                            <div>
+                                <li className="nav-item">
+                                    <Link to={"/" + currentUser.username} className="nav-link">
+                                        {currentUser.username}
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/login" onClick={logOut}>Logout</Link>
+
+                                </li>
+                            </div>
+                        ) : (
+                            <div>
+                                <li className="nav-item">
+                                    <Link to={"/login"} className="nav-link">
+                                        Login
+                                    </Link>
+                                </li>
+
+                                <li className="nav-item">
+                                    <Link to={"/register"} className="nav-link">
+                                        Sign Up
+                                    </Link>
+                                </li>
+                            </div>
+                        )}
+                    </ul>
+                </div>
             </div>
-            {/*<Link classname={styles.logo}>Logotype</Link>
 
-            <ul className={styles.menu}>
-                {currentUser ? (
-                    <div>
-                        <li className="nav-item">
-                            <Link to={"/" + currentUser.username} className="nav-link">
-                                {currentUser.username}
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/login" onClick={logOut}>Logout</Link>
-
-                        </li>
-                    </div>
-                ) : (
-                    <div>
-                        <li className="nav-item">
-                            <Link to={"/login"} className="nav-link">
-                                Login
-                            </Link>
-                        </li>
-
-                        <li className="nav-item">
-                            <Link to={"/register"} className="nav-link">
-                                Sign Up
-                            </Link>
-                        </li>
-                    </div>
-                )}
-            </ul>*/}
         </div>
     )
 }

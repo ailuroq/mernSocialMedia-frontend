@@ -6,6 +6,7 @@ import Register from "../Register";
 import Profile from "./Profile/Profile";
 import Photos from "../Photos";
 import BoardAdmin from "../BoardAdmin";
+import NoFound from "../Errors/NoFound";
 
 const Content = () => {
     return (
@@ -19,6 +20,7 @@ const Content = () => {
                 <Route exact path="/:username/photos" component={Photos}/>
                 <Route exact path="/:username/friends" />
                 <Route exact path="/admin/admin" component={BoardAdmin}/>
+                <Route path="*" component={NoFound}/>
             </Switch>
         </div>
     )

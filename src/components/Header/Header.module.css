@@ -7,6 +7,9 @@
     grid-area: header;
 }
 
+.top_profile_info {
+    justify-self: end;
+}
 .header_container {
     max-width: 950px;
     margin: 0 auto;
@@ -33,4 +36,10 @@
 .menu li {
     display: inline-block;
     margin-right: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #585454;
+    display: block;
 }

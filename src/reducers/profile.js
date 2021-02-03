@@ -1,7 +1,14 @@
 import {GET_PROFILE} from "../actions/types";
 
 const initialState = {
-    profileData: ""
+    profileData: {
+        friends:[],
+        chats: [],
+        photos:[],
+        posts: [],
+        email: "",
+        username: ""
+    }
 }
 export default function profile(state = initialState, action) {
     switch (action.type) {
