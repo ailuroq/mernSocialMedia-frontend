@@ -12,3 +12,62 @@
 .post_item p {
     margin: 0;
 }
+
+.post_top {
+    display: grid;
+    grid-template-columns: 2fr 12fr;
+}
+
+.post_top img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.date p{
+    margin-top: -3px;
+    font-size: 13px;
+}
+
+.text {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #949393;
+}
+
+.post_bottom {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    padding-top: 7px;
+    justify-items: start;
+
+}
+.post_bottom p {
+    margin-right: 8px;
+}
+.post_bottom p:hover {
+    cursor: pointer;
+}
+.number_of_likes {
+    margin-right: 10px;
+}
+
+.like {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: start;
+}
+
+.like:hover {
+    color: #00ff00;
+}
+
+.dislike {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    justify-items: start;
+
+}
+
+.dislike:hover {
+    color: red;
+}

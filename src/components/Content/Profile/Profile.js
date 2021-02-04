@@ -115,7 +115,10 @@ const Profile = () => {
             </div>
             <div>
                 <div className={styles.posts}>
-                    <Posts posts={profileData.posts}/>
+                    <Posts
+                        posts={profileData.posts}
+                        username={profileData.username}
+                    />
 
                 </div>
                 {profileData.posts.length === 0 &&

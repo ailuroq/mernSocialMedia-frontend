@@ -29,6 +29,13 @@
     justify-self: center;
 }
 
+.search input {
+    border-radius: 6px;
+    width: 220px;
+    height: 20px;
+    margin-left: 25px;
+    font-size: 14px;
+}
 .menu {
     margin-top: 0;
 }

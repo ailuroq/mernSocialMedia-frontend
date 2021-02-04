@@ -16,7 +16,9 @@ const Header = () => {
                 <div className={styles.logo}>
                     <Link>LOGOTYPE</Link>
                 </div>
-                <div className={styles.search}>2</div>
+                <div className={styles.search}>
+                    <input placeholder="Find friends" type="text"/>
+                </div>
                 <div className={styles.top_profile_info}>
                     <ul className={styles.menu}>
                         {currentUser ? (
