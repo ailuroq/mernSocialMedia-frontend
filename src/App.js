@@ -14,7 +14,7 @@ import Navbar from "./components/Navbar/Navbar";
 const App = () => {
     const [showModeratorBoard, setShowModeratorBoard] = useState(false);
     const [showAdminBoard, setShowAdminBoard] = useState(false);
-
+    const [showScroll, setShowScroll] = useState(false)
     const {user: currentUser} = useSelector((state) => state.auth);
     const dispatch = useDispatch();
 
@@ -35,10 +35,28 @@ const App = () => {
         dispatch(logout());
     };
 
+    const checkScrollTop = () => {
+        if (!showScroll && window.pageYOffset > 400) {
+            setShowScroll(true)
+        } else if (showScroll && window.pageYOffset <= 400) {
+            setShowScroll(false)
+        }
+    };
+
+    const scrollTop = () => {
+        window.scrollTo({top: 0, behavior: 'smooth'})
+    }
+
+    window.addEventListener('scroll', checkScrollTop)
     return (
 
         <div className={styles.main_wrapper}>
             <Header/>
+            <div className={styles.top_scroll} onClick={scrollTop}
+            style={{height:2000, display:showScroll ? 'flex': 'none'}}
+            >
+                <p>Up ↑</p>
+            </div>
             <div className={styles.content}>
                 <Navbar/>
                 <Content/>

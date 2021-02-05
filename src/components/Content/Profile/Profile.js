@@ -114,6 +114,9 @@ const Profile = () => {
                 <div></div>
             </div>
             <div>
+                <div className={styles.add_post_form}>
+                    Add post form
+                </div>
                 <div className={styles.posts}>
                     <Posts
                         posts={profileData.posts}

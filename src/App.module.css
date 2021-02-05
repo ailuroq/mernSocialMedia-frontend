@@ -9,6 +9,23 @@
     grid-gap: 10px;
 }
 
+.top_scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 150px;
+    background: #edeef0;
+    cursor: pointer;
+}
+.top_scroll:hover {
+    background: #d6d6ec;
+}
+.top_scroll p {
+    margin: 20px auto 0;
+    font-size: 25px;
+    color: #8092a5;
+}
 .content {
     max-width: 950px;
     margin: 0 auto;

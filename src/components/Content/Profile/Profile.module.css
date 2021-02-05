@@ -9,7 +9,7 @@
     background: #fff;
     padding: 15px;
     border-radius: 5px;
-    box-shadow: 3px 3px 1px rgba(0, 0, 0, .05);
+
 }
 
 .avatar {
@@ -146,8 +146,13 @@
     color: #929292;
 }
 
+.add_post_form {
+    margin-top: -150px;
+    background: #fff;
+    height: 100px;
+}
+
 .posts {
-    margin-top: -165px;
     border-radius: 5px;
 }
 
