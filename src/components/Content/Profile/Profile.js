@@ -110,7 +110,6 @@ const Profile = () => {
                                     <span>
                                         {profileData.username}
                                     </span>
-                                        das
                                     </p>
                                 </div>
                             </div>
@@ -147,6 +146,7 @@ const Profile = () => {
                     </div>
                 </div>
                 <div>
+                    {currentUser.username === profileData.username &&
                     <div className={styles.add_post_form}>
                         <Form onSubmit={handlePost} ref={form}>
                             <label htmlFor="postContent">post content</label>
@@ -165,7 +165,7 @@ const Profile = () => {
                             </div>
                             <CheckButton style={{display: 'none'}} ref={checkBtn} />
                         </Form>
-                    </div>
+                    </div>}
                     <div className={styles.posts}>
                         <Posts
                             posts={profileData.posts}
