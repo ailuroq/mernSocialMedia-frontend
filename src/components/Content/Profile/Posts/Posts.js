@@ -8,7 +8,7 @@ const Posts = props => {
     return (
         <div className={styles.posts}>
             {
-                props.posts.reverse().map(post=>{
+                props.posts.slice(0).reverse().map(post=>{
                     return (
                         <div key={post.id}>
                             <Post

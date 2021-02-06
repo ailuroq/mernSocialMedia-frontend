@@ -1,4 +1,4 @@
-import {GET_PROFILE} from "../actions/types";
+import {CREATE_POST_SUCCESS, GET_PROFILE} from "../actions/types";
 
 const initialState = {
     profileData: {
@@ -16,6 +16,11 @@ export default function profile(state = initialState, action) {
             return {
                 ...state,
                 profileData: action.payload
+            }
+        case CREATE_POST_SUCCESS:
+            return {
+                ...state,
+
             }
         default:
             return state

@@ -1,8 +1,8 @@
 import {GET_PROFILE, SET_MESSAGE} from "./types";
 import axios from "axios";
 import authHeader from "../services/auth-header";
+import {API_URL} from "../constants/urlConstants";
 
-const API_URL = "http://localhost:8080/api/";
 
 const _getProfile = (profileData) => ({
     type: GET_PROFILE,
