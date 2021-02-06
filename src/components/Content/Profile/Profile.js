@@ -48,7 +48,6 @@ const Profile = () => {
         if(checkBtn.current.context._errors.length === 0 ){
             dispatch(createPost(currentUser.username, postContent))
                 .then(()=>{
-                    window.location.reload()
                 })
 
         }

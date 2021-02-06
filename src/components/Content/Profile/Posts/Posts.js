@@ -4,7 +4,7 @@ import Post from "./Post/Post";
 
 const Posts = props => {
     //const posts =Object.keys(props).map((key) => [Number(key), props[key]])
-    console.log(props)
+
     return (
         <div className={styles.posts}>
             {

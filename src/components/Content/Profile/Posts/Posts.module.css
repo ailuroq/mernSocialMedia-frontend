@@ -16,7 +16,7 @@
 
 .post_top {
     display: grid;
-    grid-template-columns: 2fr 12fr;
+    grid-template-columns: 2fr 12fr 1fr;
 }
 
 .post_top img{
@@ -71,4 +71,14 @@
 
 .dislike:hover {
     color: red;
+}
+
+.delete p{
+    font-size: 14px;
+    color: #f67c7c;
+}
+
+.delete p:hover {
+    color: #fd0000;
+    cursor: pointer;
 }

@@ -1,10 +1,10 @@
-import {CREATE_POST_SUCCESS, GET_PROFILE} from "../actions/types";
+import {CREATE_POST_SUCCESS, DELETE_POST, GET_PROFILE} from "../actions/types";
 
 const initialState = {
     profileData: {
-        friends:[],
+        friends: [],
         chats: [],
-        photos:[],
+        photos: [],
         posts: [],
         email: "",
         username: ""
@@ -20,7 +20,18 @@ export default function profile(state = initialState, action) {
         case CREATE_POST_SUCCESS:
             return {
                 ...state,
-
+                profileData: {
+                    ...state.profileData,
+                    ...action.payload
+                }
+            }
+        case DELETE_POST:
+            return {
+                ...state,
+                profileData: {
+                    ...state.profileData,
+                    ...action.payload
+                }
             }
         default:
             return state

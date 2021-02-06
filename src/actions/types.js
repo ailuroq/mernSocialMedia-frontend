@@ -9,3 +9,4 @@ export const CLEAR_MESSAGE = "CLEAR_MESSAGE";
 
 export const GET_PROFILE = "GET_PROFILE"
 export const CREATE_POST_SUCCESS = "CREATE_POST_SUCCESS"
+export const DELETE_POST = "DELETE_POST"

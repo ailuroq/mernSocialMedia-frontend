@@ -21,7 +21,7 @@ const required = (value) => {
 
 const CreatePost = () => {
     const {user: currentUser} = useSelector((state) => state.auth);
-    console.log(currentUser)
+
     const form = useRef();
     const checkBtn = useRef();
 
